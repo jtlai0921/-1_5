@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout1">
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" >
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText android:id="@+id/edtName"
+            android:text="林小明"
+            android:textColor="#0000FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" >
+
+        <RadioGroup android:orientation="horizontal"
+            android:id="@+id/radGroupBloods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="血型"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton android:id="@+id/radBloodO"
+                android:text="O"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#0000FF" />
+
+            <RadioButton android:id="@+id/radBloodA"
+                android:text="A"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#0000FF" />
+
+            <RadioButton android:id="@+id/radBloodB"
+                android:text="B"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#0000FF" />
+
+            <RadioButton android:id="@+id/radBloodAB"
+                android:text="AB"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#0000FF" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/txtResult"
+        android:text="顯示結果"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>
